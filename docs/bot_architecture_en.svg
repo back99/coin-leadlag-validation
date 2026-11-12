@@ -1,0 +1,80 @@
+<svg viewBox="0 0 940 620" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans CJK KR, DejaVu Sans, sans-serif">
+  <rect x="0" y="0" width="940" height="620" fill="#ffffff"/>
+  <style>
+    .lbl{fill:#1b2333; font-size:15px; font-weight:700;}
+    .sub{fill:#5a6478; font-size:11px; font-weight:500;}
+    .grp{fill:#5a6478; font-size:12px; font-weight:700;}
+    .flow{fill:#5a6478; font-size:11px; font-weight:600;}
+  </style>
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto">
+      <path d="M0,0 L7,3.2 L0,6.4 Z" fill="#8a93a6"/>
+    </marker>
+    <marker id="arac" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto">
+      <path d="M0,0 L7,3.2 L0,6.4 Z" fill="#2f6fed"/>
+    </marker>
+  </defs>
+
+  <rect x="255" y="70" width="420" height="500" rx="16" fill="none" stroke="#d3d8e0" stroke-width="1.4" stroke-dasharray="5 5"/>
+  <text class="grp" x="270" y="95">AWS · Automated / Unattended</text>
+  <rect x="710" y="120" width="205" height="330" rx="16" fill="none" stroke="#d3d8e0" stroke-width="1.4" stroke-dasharray="5 5"/>
+  <text class="grp" x="725" y="145">What I See</text>
+
+  <rect x="30" y="270" width="170" height="90" rx="12" fill="#efe9df" stroke="#d8cbb3" stroke-width="1.5"/>
+  <text class="lbl" x="115" y="308" text-anchor="middle">Binance Testnet</text>
+  <text class="sub" x="115" y="330" text-anchor="middle">Market data · Orders</text>
+
+  <rect x="290" y="265" width="200" height="100" rx="12" fill="#e7efff" stroke="#9cbcff" stroke-width="2"/>
+  <text class="lbl" x="390" y="298" text-anchor="middle">Trading Bot</text>
+  <text class="sub" x="390" y="320" text-anchor="middle">Fargate · always 1 running</text>
+  <text class="sub" x="390" y="338" text-anchor="middle">Decide → Order → Self-heal</text>
+
+  <rect x="300" y="120" width="180" height="66" rx="12" fill="#f5f6f8" stroke="#d3d8e0" stroke-width="1.5"/>
+  <text class="lbl" x="390" y="150" text-anchor="middle">Secrets Manager</text>
+  <text class="sub" x="390" y="170" text-anchor="middle">API key storage</text>
+
+  <rect x="530" y="265" width="130" height="100" rx="12" fill="#f5f6f8" stroke="#d3d8e0" stroke-width="1.5"/>
+  <text class="lbl" x="595" y="303" text-anchor="middle">DynamoDB</text>
+  <text class="sub" x="595" y="324" text-anchor="middle">State store</text>
+  <text class="sub" x="595" y="341" text-anchor="middle">Positions·Fills·PnL</text>
+
+  <rect x="300" y="450" width="180" height="70" rx="12" fill="#f5f6f8" stroke="#d3d8e0" stroke-width="1.5"/>
+  <text class="lbl" x="390" y="480" text-anchor="middle">CloudWatch</text>
+  <text class="sub" x="390" y="500" text-anchor="middle">Logs · Alarms (bot health)</text>
+
+  <rect x="730" y="165" width="165" height="76" rx="12" fill="#e7efff" stroke="#9cbcff" stroke-width="1.5"/>
+  <text class="lbl" x="812" y="194" text-anchor="middle">Telegram Bot</text>
+  <text class="sub" x="812" y="215" text-anchor="middle">Alerts + /status query</text>
+
+  <rect x="730" y="320" width="165" height="76" rx="12" fill="#e7efff" stroke="#9cbcff" stroke-width="1.5"/>
+  <text class="lbl" x="812" y="349" text-anchor="middle">Web Dashboard</text>
+  <text class="sub" x="812" y="370" text-anchor="middle">S3+CloudFront · charts</text>
+
+  <rect x="770" y="470" width="120" height="70" rx="12" fill="#e7efff" stroke="#9cbcff" stroke-width="2"/>
+  <text class="lbl" x="830" y="500" text-anchor="middle">Me</text>
+  <text class="sub" x="830" y="520" text-anchor="middle">Hands-off</text>
+
+  <path d="M200,315 L286,315" fill="none" stroke="#8a93a6" stroke-width="2" marker-end="url(#ar)"/>
+  <path d="M286,340 L200,340" fill="none" stroke="#8a93a6" stroke-width="2" marker-end="url(#ar)"/>
+  <text class="flow" x="243" y="308" text-anchor="middle">quotes</text>
+  <text class="flow" x="243" y="357" text-anchor="middle">orders</text>
+
+  <path d="M390,186 L390,261" fill="none" stroke="#8a93a6" stroke-width="2" marker-end="url(#ar)"/>
+  <text class="flow" x="410" y="228" text-anchor="middle">key</text>
+
+  <path d="M490,315 L526,315" fill="none" stroke="#8a93a6" stroke-width="2" marker-end="url(#ar)"/>
+  <text class="flow" x="508" y="308" text-anchor="middle">write</text>
+
+  <path d="M390,365 L390,446" fill="none" stroke="#8a93a6" stroke-width="2" marker-end="url(#ar)"/>
+  <text class="flow" x="414" y="410" text-anchor="middle">logs</text>
+
+  <path d="M660,290 C700,270 700,230 726,212" fill="none" stroke="#2f6fed" stroke-width="2" marker-end="url(#arac)"/>
+  <path d="M660,335 C700,345 700,352 726,356" fill="none" stroke="#2f6fed" stroke-width="2" marker-end="url(#arac)"/>
+  <text class="flow" x="694" y="300" text-anchor="middle">read</text>
+
+  <path d="M812,241 C812,300 830,410 830,466" fill="none" stroke="#2f6fed" stroke-width="2" marker-end="url(#arac)"/>
+  <path d="M812,396 L825,466" fill="none" stroke="#2f6fed" stroke-width="2" marker-end="url(#arac)"/>
+
+  <path d="M480,495 C640,540 720,515 768,510" fill="none" stroke="#8a93a6" stroke-width="2" marker-end="url(#ar)"/>
+  <text class="flow" x="620" y="533" text-anchor="middle">alert if bot stops</text>
+</svg>
